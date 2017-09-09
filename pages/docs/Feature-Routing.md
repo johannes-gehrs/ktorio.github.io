@@ -124,7 +124,7 @@ accept(ContentType.Text.Plain) { … }
 accept(ContentType.Text.Html) { … }
 ```
 
-The routing matching algorithm not only checks if aparticular HTTP request matches specific path in a routing tree, but
+The routing matching algorithm not only checks if a particular HTTP request matches specific path in a routing tree, but
 also calculates the quality of the match and selects the routing node with the best quality.  Given the routes above,
 which match on the Accept header, and given the request header `Accept: text/plain; q=0.5, text/html` will match
 `text/html` because the quality factor in the HTTP header indicates a higher priority for`text/plain` (default is 1.0).
